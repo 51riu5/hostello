@@ -1,0 +1,10 @@
+<title>Home - Hostello</title>
+
+<h2>Hello {{user}} </h2>
+
+{% if user.is_authenticated %}
+    <a href="/logout/">Logout</a>
+{% else %}
+    <a href="/login/">Login</a>
+    <a href="/signup/">Sign Up</a>
+{% endif %}
